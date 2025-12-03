@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>مجموعه غذایی لذیذ | سفارش آنلاین غذا</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- لود فونت وزیرمتن (مشابه اسنپ) -->
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="glass-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <i class="fas fa-utensils logo-icon"></i>
+                    <h1>مجموعه غذایی لذیذ</h1>
+                </div>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Slider Section -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('images/header/mosama.jpg');">
+                <div class="slide-content">
+                    <h2>با اصالتی کهن</h2>
+                    <p></p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/header/Koobide.jpg');">
+                <div class="slide-content">
+                    <h2>کباب های لذیذ</h2>
+                    <p>لذت یک طعم همیشگی و اصیل</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/header/Jooje.jpg');">
+                <div class="slide-content">
+                    <h2>جوجه رو با لذیذ بشمار</h2>
+                    <p>سالم، تازه و خوشمزه</p>
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <button class="slider-btn prev"><i class="fas fa-chevron-right"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+    <!-- Controls Section (Type Selector + Search) -->
+    <section class="controls-section">
+        <div class="container">
+            <div class="controls-wrapper">
+                <!-- Menu Type -->
+                <div class="type-buttons">
+                    <button class="type-btn active" data-type="portion">
+                        <i class="fas fa-plate-wheat"></i>
+                        <span>غذای پرسی</span>
+                    </button>
+                    <button class="type-btn" data-type="kilo">
+                        <i class="fas fa-weight"></i>
+                        <span>منوی کیلویی</span>
+                    </button>
+                </div>
+
+                <!-- Search Box -->
+                <div class="search-box glass">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="جستجو در نام غذاها...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="category-filter" id="menu">
+        <div class="container">
+            <div class="category-scroll">
+                <button class="category-btn active" data-category="all">همه</button>
+                <button class="category-btn" data-category="cheloi">چلویی</button>
+                <button class="category-btn" data-category="poloi">پلویی</button>
+                <button class="category-btn" data-category="kababi">کبابی</button>
+                <button class="category-btn" data-category="daryaei">دریایی</button>
+                <button class="category-btn" data-category="khorak">خوراک</button>
+                <button class="category-btn" data-category="khoresht">خورشتی</button>
+                <button class="category-btn" data-category="melal">ملل</button>
+                <button class="category-btn" data-category="fingerfood">فینگرفود</button>
+                <button class="category-btn" data-category="salad">سالادها</button>
+                <button class="category-btn" data-category="pishghaza">پیش غذا</button>
+                <button class="category-btn" data-category="noshidani">نوشیدنی</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Grid -->
+    <section class="menu-items">
+        <div class="container">
+            <div class="menu-grid" id="menuGrid">
+                <!-- Items injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content glass">
+            <span class="close-modal">&times;</span>
+            
+            <div class="modal-body">
+                <!-- Image Slider inside Modal -->
+                <div class="product-slider">
+                    <div class="product-slide active">
+                        <img id="modalImg1" src="" alt="">
+                    </div>
+                    <div class="product-slide">
+                        <img id="modalImg2" src="" alt="">
+                    </div>
+                    <div class="product-slide">
+                        <img id="modalImg3" src="" alt="">
+                    </div>
+                    <button class="p-slider-btn prev"><i class="fas fa-chevron-right"></i></button>
+                    <button class="p-slider-btn next"><i class="fas fa-chevron-left"></i></button>
+                </div>
+
+                <div class="product-info">
+                    <h2 id="modalTitle">نام محصول</h2>
+                    <span id="modalCategory" class="modal-cat-badge">دسته بندی</span>
+                    <p class="product-desc">
+                        تهیه شده از بهترین مواد اولیه روز. این غذا با دستور پخت ویژه سرآشپز لذیذ آماده شده و طعمی به یاد ماندنی دارد. همراه با دورچین کامل و مخلفات.
+                    </p>
+                    <div class="modal-footer">
+                        <div class="modal-price" id="modalPrice">0 تومان</div>
+                        <a href="tel:+98763204" class="btn-order-modal">
+                            <i class="fas fa-phone-alt"></i>
+                            سفارش تلفنی
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Branches Section -->
+    <section class="branches" id="branches">
+        <div class="container">
+            <h2 class="section-title">شعبات لذیذ</h2>
+            <div class="branches-grid">
+                <!-- شعبه آزادگان -->
+                <div class="branch-card glass">
+                    <h3>شعبه آزادگان</h3>
+                    <p>انتهای بلوار نواب صفوی رو به روی شیرینی پاک</p>
+                    <a href="https://www.google.com/maps?q=27.20184210871102,56.30491665160769" target="_blank" class="branch-btn">مسیریابی</a>
+                </div>
+                <!-- شعبه رسالت -->
+                <div class="branch-card glass">
+                    <h3>شعبه رسالت</h3>
+                    <p>رسالت شمالی، 13 هکتاری، بعد از کوچه فرخی</p>
+                    <a href="https://www.google.com/maps?q=27.20761939489463,56.328559329478736" target="_blank" class="branch-btn">مسیریابی</a>
+                </div>
+                <!-- شعبه دلگشا -->
+                <div class="branch-card glass">
+                    <h3>شعبه دلگشا</h3>
+                    <p>سه راه دلگشا، جنب کلانتری بازار</p>
+                    <a href="https://www.google.com/maps?q=27.178480038595993,56.274422302205146" target="_blank" class="branch-btn">مسیریابی</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+98763204" class="floating-call-btn">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
