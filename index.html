@@ -29,9 +29,9 @@
     <!-- Hero Slider Section -->
     <section class="hero-slider">
         <div class="slider-container">
-            <div class="slide active" style="background-image: url('images/header/mosama.jpg');">
+            <div class="slide active" style="background-image: url('images/header/20years family.jpg');">
                 <div class="slide-content">
-                    <h2>با اصالتی کهن</h2>
+                    <h2>خانواده 20 ساله لذیذ</h2>
                     <p></p>
                 </div>
             </div>
@@ -48,13 +48,13 @@
                 </div>
             </div>
             
-            <!-- Slider Controls -->
-            <button class="slider-btn prev"><i class="fas fa-chevron-right"></i></button>
-            <button class="slider-btn next"><i class="fas fa-chevron-left"></i></button>
+         <!-- Slider Controls -->
+            <button class="slider-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next"><i class="fas fa-chevron-right"></i></button>
             <div class="slider-dots"></div>
         </div>
     </section>
-
+    ...
     <!-- Controls Section (Type Selector + Search) -->
     <section class="controls-section">
         <div class="container">
@@ -109,31 +109,22 @@
         </div>
     </section>
 
-    <!-- Product Detail Modal -->
+    <!-- Product Detail Modal (updated) -->
     <div id="productModal" class="modal">
         <div class="modal-content glass">
             <span class="close-modal">&times;</span>
             
             <div class="modal-body">
-                <!-- Image Slider inside Modal -->
                 <div class="product-slider">
                     <div class="product-slide active">
-                        <img id="modalImg1" src="" alt="">
+                        <img id="modalImg" src="" alt="">
                     </div>
-                    <div class="product-slide">
-                        <img id="modalImg2" src="" alt="">
-                    </div>
-                    <div class="product-slide">
-                        <img id="modalImg3" src="" alt="">
-                    </div>
-                    <button class="p-slider-btn prev"><i class="fas fa-chevron-right"></i></button>
-                    <button class="p-slider-btn next"><i class="fas fa-chevron-left"></i></button>
                 </div>
 
                 <div class="product-info">
                     <h2 id="modalTitle">نام محصول</h2>
                     <span id="modalCategory" class="modal-cat-badge">دسته بندی</span>
-                    <p class="product-desc">
+                    <p class="product-desc" id="modalDesc">
                         تهیه شده از بهترین مواد اولیه روز. این غذا با دستور پخت ویژه سرآشپز لذیذ آماده شده و طعمی به یاد ماندنی دارد. همراه با دورچین کامل و مخلفات.
                     </p>
                     <div class="modal-footer">
@@ -153,19 +144,16 @@
         <div class="container">
             <h2 class="section-title">شعبات لذیذ</h2>
             <div class="branches-grid">
-                <!-- شعبه آزادگان -->
                 <div class="branch-card glass">
                     <h3>شعبه آزادگان</h3>
                     <p>انتهای بلوار نواب صفوی رو به روی شیرینی پاک</p>
                     <a href="https://www.google.com/maps?q=27.20184210871102,56.30491665160769" target="_blank" class="branch-btn">مسیریابی</a>
                 </div>
-                <!-- شعبه رسالت -->
                 <div class="branch-card glass">
                     <h3>شعبه رسالت</h3>
                     <p>رسالت شمالی، 13 هکتاری، بعد از کوچه فرخی</p>
                     <a href="https://www.google.com/maps?q=27.20761939489463,56.328559329478736" target="_blank" class="branch-btn">مسیریابی</a>
                 </div>
-                <!-- شعبه دلگشا -->
                 <div class="branch-card glass">
                     <h3>شعبه دلگشا</h3>
                     <p>سه راه دلگشا، جنب کلانتری بازار</p>
@@ -174,7 +162,24 @@
             </div>
         </div>
     </section>
+<!-- Floating Rotating Button -->
+    <div class="floating-rotate-btn" role="button" aria-label="آیتم ویژه">
+        <div class="spin-wrapper">
+            <img src="images/ui/promo-front.png" alt="آیتم ویژه ۱" class="spin-face spin-face-front">
+            <img src="images/ui/promo-back.png" alt="آیتم ویژه ۲" class="spin-face spin-face-back">
+        </div>
+    </div>
 
+    <!-- Floating Call Button -->
+    <a href="tel:+98763204" class="floating-call-btn">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <footer class="site-footer">
+        <div class="container">
+            تمام حقوق اين وب‌سايت نیز برای شرکت لذیذ پخت خلیج فارس است.
+        </div>
+    </footer>
     <!-- Floating Call Button -->
     <a href="tel:+98763204" class="floating-call-btn">
         <i class="fas fa-phone"></i>
