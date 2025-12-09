@@ -1,257 +1,277 @@
 // ==================== Data ====================
 const menuData = {
-    kilo: [
-        { id: 101, name: 'کباب چنجه گوسفندی', price: '۲۵۵,۰۰۰', category: 'kababi', image: 'images/kilo/kabab-chanje-gosfandi.png' },
-        { id: 102, name: 'جوجه اسپایسی', price: '۹۹,۰۰۰', category: 'kababi', image: 'images/kilo/joje-espaysi.png' },
-        { id: 103, name: 'جوجه کباب زعفرانی', price: '۹۹,۰۰۰', category: 'kababi', image: 'images/kilo/joje-kabab-zaferani.png' },
-        { id: 104, name: 'پیراشکی مرغ', price: '۵۰,۸۰۰', category: 'fingerfood', image: 'images/kilo/Pirashki.png' },
-        { id: 105, name: 'استامبولی', price: '۴۶,۰۰۰', category: 'poloi', image: 'images/kilo/estamboli.png' },
-        { id: 106, name: 'باقالی پلو', price: '۲۷,۳۰۰', category: 'poloi', image: 'images/kilo/baghali-polo.png' },
-        { id: 107, name: 'بریانی مرغ', price: '۵۰,۸۰۰', category: 'khorak', image: 'images/kilo/biryani-morgh.png' },
-        { id: 108, name: 'پلو مکزیکی', price: '۵۰,۸۰۰', category: 'poloi', image: 'images/kilo/polo-meksiki.png' },
-        { id: 109, name: 'خورشت قورمه سبزی', price: '۵۵,۱۰۰', category: 'khoresht', image: 'images/kilo/khoresht-ghormeh-sabzi.png' },
-        { id: 110, name: 'خورشت قیمه', price: '۵۵,۱۰۰', category: 'khoresht', image: 'images/kilo/khoresht-gheymeh.png' },
-        { id: 111, name: 'مسما بادمجان', price: '۵۶,۲۰۰', category: 'khorak', image: 'images/kilo/mosamma-bademjan.png' },
-        { id: 112, name: 'عدس پلو', price: '۴۶,۵۵۰', category: 'poloi', image: 'images/kilo/adas-polo.png' },
-        { id: 113, name: 'چلو ایرانی', price: '۲۶,۵۰۰', category: 'cheloi', image: 'images/kilo/chelo-irani.png' },
-        { id: 114, name: 'چلو هندی', price: '۱۸,۷۵۰', category: 'cheloi', image: 'images/kilo/chelo-hendi.png' },
-        { id: 115, name: 'هواری گوشت', price: '۵۸,۸۵۰', category: 'khorak', image: 'images/kilo/havari-gosht.png' },
-        { id: 116, name: 'هواری میگو', price: '۸۰,۲۵۰', category: 'daryaei', image: 'images/kilo/Havari-Meygou.png' },
-        { id: 117, name: 'هواری ماهی', price: '۶۲,۶۰۰', category: 'daryaei', image: 'images/kilo/havari-mahi.png' },
-        { id: 118, name: 'قلیه ماهی', price: '۸۷,۲۰۰', category: 'daryaei', image: 'images/kilo/ghalyeh-mahi.png' },
-        { id: 119, name: 'کتلت گوشت', price: '۶۵,۸۰۰', category: 'khorak', image: 'images/kilo/kotlet-gosht.png' },
-        { id: 120, name: 'دلمه برگ مو', price: '۵۱,۹۰۰', category: 'khorak', image: 'images/kilo/dolmeh-barg-mo.png' },
-        { id: 121, name: 'لازانیا', price: '۵۷,۲۵۰', category: 'melal', image: 'images/kilo/Lazania.png' },
-        { id: 122, name: 'ماکارونی', price: '۵۰,۸۵۰', category: 'melal', image: 'images/kilo/makaroni.png' },
-        { id: 123, name: 'کشک و بادمجان', price: '۳۵,۸۵۰', category: 'pishghaza', image: 'images/kilo/kashk-bademjan.png' },
-        { id: 124, name: 'سوپ جو', price: '۳۱,۵۵۰', category: 'pishghaza', image: 'images/kilo/soup-jo.png' },
-        { id: 125, name: 'سوپ دال عدس', price: '۳۱,۵۵۰', category: 'pishghaza', image: 'images/kilo/soup-dal-adas.png' },
-        { id: 126, name: 'حمص', price: '۳۲,۶۵۰', category: 'pishghaza', image: 'images/kilo/hommos.png' },
-        { id: 127, name: 'سالاد پاستا', price: '۴۰,۱۵۰', category: 'salad', image: 'images/kilo/Salad-pasta.png' },
-        { id: 128, name: 'سالاد فتوش', price: '۴۰,۱۵۰', category: 'salad', image: 'images/kilo/Fatoosh.png' }
-    ],
-    portion: [
-        { id: 201, name: 'چلو کباب برگ گوسفندی', price: '۷۵۰,۰۰۰', category: 'kababi', image: 'images/portion/chelo-kabab-barg-gosfandi.png' },
-        { id: 202, name: 'چلو کباب کوبیده مخصوص', price: '۲۷۳,۰۰۰', category: 'kababi', image: 'images/portion/chelo-kabab-koobideh-makhsoos.png' },
-        { id: 203, name: 'چلو جوجه کباب', price: '۲۵۱,۵۰۰', category: 'kababi', image: 'images/portion/chelo-joje-kabab.png' },
-        { id: 204, name: 'چلو جوجه اسپایسی', price: '۲۵۱,۵۰۰', category: 'kababi', image: 'images/portion/chelo-joje-espaysi.png' },
-        { id: 205, name: 'چلو کباب وزیری', price: '۳۹۱,۰۰۰', category: 'kababi', image: 'images/portion/chelo-kabab-vaziri.png' },
-        { id: 206, name: 'پلو بندری', price: '۲۶۲,۰۰۰', category: 'poloi', image: 'images/portion/polo-bandari.png' },
-        { id: 207, name: 'باقالی پلو با گوشت گوساله', price: '۵۶۷,۰۰۰', category: 'poloi', image: 'images/portion/Baghali-Polo-Ba-goosht.png' },
-        { id: 208, name: 'باقالی پلو با مرغ', price: '۲۹۴,۵۰۰', category: 'poloi', image: 'images/portion/baghali-polo-morgh.png' },
-        { id: 209, name: 'زرشک پلو با مرغ', price: '۲۴۶,۰۰۰', category: 'poloi', image: 'images/portion/zereshk-polo-morgh.png' },
-        { id: 210, name: 'چلو مرغ آلو', price: '۲۴۶,۰۰۰', category: 'cheloi', image: 'images/portion/chelo-morgh-aloo.png' },
-        { id: 211, name: 'چلو میگو کبابی', price: '۴۸۷,۰۰۰', category: 'daryaei', image: 'images/portion/chelo-meygo-kababi.png' },
-        { id: 212, name: 'چلو میگو سوخاری', price: '۴۸۷,۰۰۰', category: 'daryaei', image: 'images/portion/chelo-meygo-sokhari.png' },
-        { id: 213, name: 'چلو ماهی کباب', price: '۵۵۶,۵۰۰', category: 'daryaei', image: 'images/portion/chelo-mahi-kabab.png' },
-        { id: 214, name: 'چلو ماهی سرخ شده', price: '۵۵۶,۵۰۰', category: 'daryaei', image: 'images/portion/chelo-mahi-sorkh-shodeh.png' },
-        { id: 215, name: 'مندی مرغ عربی', price: '۲۸۳,۵۰۰', category: 'melal', image: 'images/portion/mandi-morgh-arabi.png' },
-        { id: 216, name: 'ته چین مرغ', price: '۲۸۳,۵۰۰', category: 'poloi', image: 'images/portion/tahchin-morgh.png' },
-        { id: 217, name: 'سیخ کوبیده', price: '۱۳۹,۰۰۰', category: 'kababi', image: 'images/portion/sikh-koobideh.jpg' },
-        { id: 218, name: 'ساندویچ کباب کوبیده گوشت', price: '۲۲۵,۰۰۰', category: 'fingerfood', image: 'images/portion/sandwich-kabab-koobideh.png' },
-        { id: 219, name: 'سالاد شیرازی', price: '۷۵,۰۰۰', category: 'salad', image: 'images/portion/salad-shirazi.png' },
-        { id: 220, name: 'سالاد فصل', price: '۱۰۲,۰۰۰', category: 'salad', image: 'images/portion/salad-fasl.png' },
-        { id: 221, name: 'سالاد سزار', price: '۱۷۱,۵۰۰', category: 'salad', image: 'images/portion/salad-caesar.png' },
-        { id: 222, name: 'ماست و خیار', price: '۶۴,۵۰۰', category: 'pishghaza', image: 'images/portion/mast-khiar.png' }
-    ]
+  kilo: [
+    { id: 101, name: 'کباب چنجه گوسفندی', price: '۲۵۵,۰۰۰', category: 'kababi', image: 'images/kilo/kabab-chanje-gosfandi.png' },
+    { id: 102, name: 'جوجه اسپایسی', price: '۹۹,۰۰۰', category: 'kababi', image: 'images/kilo/joje-espaysi.png' },
+    { id: 103, name: 'جوجه کباب زعفرانی', price: '۹۹,۰۰۰', category: 'kababi', image: 'images/kilo/joje-kabab-zaferani.png' },
+    { id: 104, name: 'پیراشکی مرغ', price: '۵۰,۸۰۰', category: 'fingerfood', image: 'images/kilo/Pirashki.png' },
+    { id: 105, name: 'استامبولی', price: '۴۶,۰۰۰', category: 'poloi', image: 'images/kilo/estamboli.png' },
+    { id: 106, name: 'باقالی پلو', price: '۲۷,۳۰۰', category: 'poloi', image: 'images/kilo/baghali-polo.png' },
+    { id: 107, name: 'بریانی مرغ', price: '۵۰,۸۰۰', category: 'khorak', image: 'images/kilo/biryani-morgh.png' },
+    { id: 108, name: 'پلو مکزیکی', price: '۵۰,۸۰۰', category: 'poloi', image: 'images/kilo/polo-meksiki.png' },
+    { id: 109, name: 'خورشت قورمه سبزی', price: '۵۵,۱۰۰', category: 'khoresht', image: 'images/kilo/khoresht-ghormeh-sabzi.png' },
+    { id: 110, name: 'خورشت قیمه', price: '۵۵,۱۰۰', category: 'khoresht', image: 'images/kilo/khoresht-gheymeh.png' },
+    { id: 111, name: 'مسما بادمجان', price: '۵۶,۲۰۰', category: 'khorak', image: 'images/kilo/mosamma-bademjan.png' },
+    { id: 112, name: 'عدس پلو', price: '۴۶,۵۵۰', category: 'poloi', image: 'images/kilo/adas-polo.png' },
+    { id: 113, name: 'چلو ایرانی', price: '۲۶,۵۰۰', category: 'cheloi', image: 'images/kilo/chelo-irani.png' },
+    { id: 114, name: 'چلو هندی', price: '۱۸,۷۵۰', category: 'cheloi', image: 'images/kilo/chelo-hendi.png' },
+    { id: 115, name: 'هواری گوشت', price: '۵۸,۸۵۰', category: 'khorak', image: 'images/kilo/havari-gosht.png' },
+    { id: 116, name: 'هواری میگو', price: '۸۰,۲۵۰', category: 'daryaei', image: 'images/kilo/Havari-Meygou.png' },
+    { id: 117, name: 'هواری ماهی', price: '۶۲,۶۰۰', category: 'daryaei', image: 'images/kilo/havari-mahi.png' },
+    { id: 118, name: 'قلیه ماهی', price: '۸۷,۲۰۰', category: 'daryaei', image: 'images/kilo/ghalyeh-mahi.png' },
+    { id: 119, name: 'کتلت گوشت', price: '۶۵,۸۰۰', category: 'khorak', image: 'images/kilo/kotlet-gosht.png' },
+    { id: 120, name: 'دلمه برگ مو', price: '۵۱,۹۰۰', category: 'khorak', image: 'images/kilo/dolmeh-barg-mo.png' },
+    { id: 121, name: 'لازانیا', price: '۵۷,۲۵۰', category: 'melal', image: 'images/kilo/Lazania.png' },
+    { id: 122, name: 'ماکارونی', price: '۵۰,۸۵۰', category: 'melal', image: 'images/kilo/makaroni.png' },
+    { id: 123, name: 'کشک و بادمجان', price: '۳۵,۸۵۰', category: 'pishghaza', image: 'images/kilo/kashk-bademjan.png' },
+    { id: 124, name: 'سوپ جو', price: '۳۱,۵۵۰', category: 'pishghaza', image: 'images/kilo/soup-jo.png' },
+    { id: 125, name: 'سوپ دال عدس', price: '۳۱,۵۵۰', category: 'pishghaza', image: 'images/kilo/soup-dal-adas.png' },
+    { id: 126, name: 'حمص', price: '۳۲,۶۵۰', category: 'pishghaza', image: 'images/kilo/hommos.png' },
+    { id: 127, name: 'سالاد پاستا', price: '۴۰,۱۵۰', category: 'salad', image: 'images/kilo/Salad-pasta.png' },
+    { id: 128, name: 'سالاد فتوش', price: '۴۰,۱۵۰', category: 'salad', image: 'images/kilo/Fatoosh.png' },
+
+    // NEW: سالادهای کیلویی
+    { id: 129, name: 'سالاد نخود', price: '۳۷,۵۰۰', category: 'salad', image: 'images/kilo/salad-nokhod.png', desc: 'سالاد نخود با نخود تازه، سبزیجات معطر و سس سبک؛ مناسب کنار غذاهای گوشتی و کبابی.' },
+    { id: 130, name: 'سالاد کلم', price: '۳۷,۵۰۰', category: 'salad', image: 'images/kilo/salad-kalam.png', desc: 'سالاد کلم با سس خامه‌ای سبک و طعم ترش و شیرین ملایم؛ انتخابی عالی برای همراهی با غذاهای سرخ‌شده.' },
+    { id: 131, name: 'سالاد تهینه', price: '۳۷,۵۰۰', category: 'salad', image: 'images/kilo/salad-tahineh.png', desc: 'سالاد تهینه مبتنی بر ارده (تهینه) با خیار، گوجه و سبزیجات تازه؛ خوش‌عطر و مغذی.' }
+  ],
+  portion: [
+    { id: 201, name: 'چلو کباب برگ گوسفندی', price: '۷۵۰,۰۰۰', category: 'kababi', image: 'images/portion/chelo-kabab-barg-gosfandi.png' },
+    { id: 202, name: 'چلو کباب کوبیده مخصوص', price: '۲۷۳,۰۰۰', category: 'kababi', image: 'images/portion/chelo-kabab-koobideh-makhsoos.png' },
+    { id: 203, name: 'چلو جوجه کباب', price: '۲۵۱,۵۰۰', category: 'kababi', image: 'images/portion/chelo-joje-kabab.png' },
+    { id: 204, name: 'چلو جوجه اسپایسی', price: '۲۵۱,۵۰۰', category: 'kababi', image: 'images/portion/chelo-joje-espaysi.png' },
+    { id: 205, name: 'چلو کباب وزیری', price: '۳۹۱,۰۰۰', category: 'kababi', image: 'images/portion/chelo-kabab-vaziri.png' },
+    { id: 206, name: 'پلو بندری', price: '۲۶۲,۰۰۰', category: 'poloi', image: 'images/portion/polo-bandari.png' },
+    { id: 207, name: 'باقالی پلو با گوشت گوساله', price: '۵۶۷,۰۰۰', category: 'poloi', image: 'images/portion/Baghali-Polo-Ba-goosht.png' },
+    { id: 208, name: 'باقالی پلو با مرغ', price: '۲۹۴,۵۰۰', category: 'poloi', image: 'images/portion/baghali-polo-morgh.png' },
+    { id: 209, name: 'زرشک پلو با مرغ', price: '۲۴۶,۰۰۰', category: 'poloi', image: 'images/portion/zereshk-polo-morgh.png' },
+    { id: 210, name: 'چلو مرغ آلو', price: '۲۴۶,۰۰۰', category: 'cheloi', image: 'images/portion/chelo-morgh-aloo.png' },
+    { id: 211, name: 'چلو میگو کبابی', price: '۴۸۷,۰۰۰', category: 'daryaei', image: 'images/portion/chelo-meygo-kababi.png' },
+    { id: 212, name: 'چلو میگو سوخاری', price: '۴۸۷,۰۰۰', category: 'daryaei', image: 'images/portion/chelo-meygo-sokhari.png' },
+    { id: 213, name: 'چلو ماهی کباب', price: '۵۵۶,۵۰۰', category: 'daryaei', image: 'images/portion/chelo-mahi-kabab.png' },
+    { id: 214, name: 'چلو ماهی سرخ شده', price: '۵۵۶,۵۰۰', category: 'daryaei', image: 'images/portion/chelo-mahi-sorkh-shodeh.png' },
+    { id: 215, name: 'مندی مرغ عربی', price: '۲۸۳,۵۰۰', category: 'melal', image: 'images/portion/mandi-morgh-arabi.png' },
+    { id: 216, name: 'ته چین مرغ', price: '۲۸۳,۵۰۰', category: 'poloi', image: 'images/portion/tahchin-morgh.png' },
+    { id: 217, name: 'سیخ کوبیده', price: '۱۳۹,۰۰۰', category: 'kababi', image: 'images/portion/sikh-koobideh.jpg' },
+    { id: 218, name: 'ساندویچ کباب کوبیده گوشت', price: '۲۲۵,۰۰۰', category: 'fingerfood', image: 'images/portion/sandwich-kabab-koobideh.png' },
+    { id: 219, name: 'سالاد شیرازی', price: '۷۵,۰۰۰', category: 'salad', image: 'images/portion/salad-shirazi.png' },
+    { id: 220, name: 'سالاد فصل', price: '۱۰۲,۰۰۰', category: 'salad', image: 'images/portion/salad-fasl.png' },
+    { id: 221, name: 'سالاد سزار', price: '۱۷۱,۵۰۰', category: 'salad', image: 'images/portion/salad-caesar.png' },
+    { id: 222, name: 'ماست و خیار', price: '۶۴,۵۰۰', category: 'pishghaza', image: 'images/portion/mast-khiar.png' },
+
+    // NEW: پیش‌غذا
+    { id: 223, name: 'بورانی بادمجان', price: '۳۰,۰۰۰', category: 'pishghaza', image: 'images/portion/borani-bademjan.png', desc: 'بورانی بادمجان خوش‌عطر با ماست محلی و سیر تازه؛ بهترین همراه برای غذاهای گوشتی و کبابی.' },
+
+    // NEW: نوشیدنی‌ها
+    { id: 224, name: 'نوشابه قوطی کوکاکولا', price: '۴۳,۶۵۰', category: 'noshidani', image: 'images/portion/noshabe-ghoti-coca.png', desc: 'نوشابه کوکاکولا قوطی با طعم کلاسیک و گاز مناسب؛ خنک و انرژی‌بخش.' },
+    { id: 225, name: 'نوشابه قوطی کوکاکولا زیرو', price: '۳۴,۴۹۹', category: 'noshidani', image: 'images/portion/noshabe-ghoti-coca-zero.png', desc: 'کوکاکولا زیرو، کم‌کالری با همان طعم محبوب؛ انتخاب مناسب برای رژیم‌های کم‌قند.' },
+    { id: 226, name: 'نوشابه قوطی فانتا', price: '۴۳,۶۵۰', category: 'noshidani', image: 'images/portion/noshabe-ghoti-fanta.png', desc: 'فانتا قوطی با طعم پرتقالی شیرین و دلچسب؛ همراهی عالی با فست‌فود.' },
+    { id: 227, name: 'نوشابه قوطی اسپرایت', price: '۴۳,۶۵۰', category: 'noshidani', image: 'images/portion/noshabe-ghoti-sprite.png', desc: 'اسپرایت خنک با طعم لیمویی و گاز ملایم؛ رفع‌تشنگی فوری.' },
+    { id: 228, name: 'دلستر قوطی هی‌دی استوایی', price: '۴۹,۹۰۰', category: 'noshidani', image: 'images/portion/delester-heyday-estovai-ghoti.png', desc: 'دلستر هی‌دی با طعم استوایی؛ عطر میوه‌های گرمسیری و طراوت‌بخش.' },
+    { id: 229, name: 'دلستر قوطی هی‌دی هلویی', price: '۴۹,۹۰۰', category: 'noshidani', image: 'images/portion/delester-heyday-helooi-ghoti.png', desc: 'دلستر هلویی شیرین و خوش‌عطر؛ مناسب برای علاقه‌مندان به نوشیدنی‌های میوه‌ای.' },
+    { id: 230, name: 'دلستر قوطی هی‌دی لیمویی', price: '۴۹,۹۰۰', category: 'noshidani', image: 'images/portion/delester-heyday-limooi-ghoti.png', desc: 'دلستر لیمویی با طعم ترش و تازه؛ حس خنکی دلپذیر.' },
+    { id: 231, name: 'دلستر قوطی هی‌دی اکسترا مالت', price: '۵۸,۰۰۰', category: 'noshidani', image: 'images/portion/delester-heyday-extra-malt-ghoti.png', desc: 'دلستر اکسترا مالت با طعم غنی‌تر مالت؛ مناسب برای دوستداران نوشیدنی‌های اصیل.' },
+    { id: 232, name: 'دلستر خانواده هی‌دی استوایی', price: '۵۹,۹۰۰', category: 'noshidani', image: 'images/portion/delester-heyday-estovai-family.png', desc: 'دلستر خانواده با طعم استوایی؛ گزینه‌ای اقتصادی و خانوادگی.' },
+    { id: 233, name: 'دلستر خانواده هی‌دی هلویی', price: '۵۹,۹۰۰', category: 'noshidani', image: 'images/portion/delester-heyday-helooi-family.png', desc: 'دلستر خانواده هلویی؛ خوش‌عطر و مناسب دورهمی‌ها.' },
+    { id: 234, name: 'دلستر خانواده هی‌دی لیمویی', price: '۵۹,۹۰۰', category: 'noshidani', image: 'images/portion/delester-heyday-limooi-family.png', desc: 'دلستر خانواده لیمویی؛ انتخابی خنک و تازه برای اشتراک.' },
+    { id: 235, name: 'لیموناد بطری', price: '۲۶,۷۵۰', category: 'noshidani', image: 'images/portion/lemonade-botri.png', desc: 'لیموناد بطری با طعم طبیعی لیمو؛ مناسب همراهی با غذاهای تند.' },
+    { id: 236, name: 'لیموناد شیشه‌ای', price: '۳۱,۰۰۰', category: 'noshidani', image: 'images/portion/lemonade-shishei.png', desc: 'لیموناد شیشه‌ای با کیفیت بالاتر و طعم متعادل؛ خنک‌کننده.' },
+    { id: 237, name: 'لیموناد خانواده', price: '۴۵,۳۱۰', category: 'noshidani', image: 'images/portion/lemonade-family.png', desc: 'لیموناد خانواده برای جمع‌های چندنفره؛ اقتصادی و باطراوت.' },
+    { id: 238, name: 'آب معدنی ۱.۵ لیتری', price: '۱۶,۰۰۰', category: 'noshidani', image: 'images/portion/water-1_5l.png', desc: 'آب معدنی ۱.۵ لیتری؛ مناسب سرو برای جمع‌های خانوادگی.' },
+    { id: 239, name: 'آب معدنی', price: '۹,۰۰۰', category: 'noshidani', image: 'images/portion/water-regular.png', desc: 'آب معدنی تک‌نفره؛ با املاح طبیعی و گوارا.' },
+    { id: 240, name: 'نوشابه خانواده کوکاکولا', price: '۵۸,۶۹۰', category: 'noshidani', image: 'images/portion/noshabe-coca-family.png', desc: 'نوشابه خانواده کوکاکولا؛ مناسب برای اشتراک در جمع‌های دوستانه.' },
+    { id: 241, name: 'نوشابه خانواده کوکاکولا زیرو', price: '۵۸,۶۹۰', category: 'noshidani', image: 'images/portion/noshabe-coca-zero-family.png', desc: 'کوکاکولا زیرو خانواده؛ کم‌کالری با همان طعم مطلوب.' },
+    { id: 242, name: 'نوشابه خانواده فانتا', price: '۵۸,۶۹۰', category: 'noshidani', image: 'images/portion/noshabe-fanta-family.png', desc: 'نوشابه خانواده فانتا پرتقالی؛ شیرین و خاطره‌انگیز.' },
+    { id: 243, name: 'نوشابه خانواده اسپرایت', price: '۵۸,۶۹۰', category: 'noshidani', image: 'images/portion/noshabe-sprite-family.png', desc: 'نوشابه خانواده اسپرایت؛ طعم لیمویی و بسیار خنک.' },
+    { id: 244, name: 'دوغ قوطی', price: '۴۰,۹۰۰', category: 'noshidani', image: 'images/portion/doogh-ghoti.png', desc: 'دوغ قوطی با طعم کلاسیک؛ خنک و دلچسب برای کنار غذاهای ایرانی.' },
+    { id: 245, name: 'دوغ بطری', price: '۲۳,۹۰۰', category: 'noshidani', image: 'images/portion/doogh-botri.png', desc: 'دوغ بطری با طعم ملایم و گاز کم؛ سازگار با ذائقه‌های مختلف.' },
+    { id: 246, name: 'دوغ خانواده', price: '۵۹,۱۰۰', category: 'noshidani', image: 'images/portion/doogh-family.png', desc: 'دوغ خانواده؛ مناسب برای سرو در وعده‌های خانوادگی.' },
+    { id: 247, name: 'نوشابه شاتوت قوطی', price: '۴۳,۰۰۰', category: 'noshidani', image: 'images/portion/noshabe-shatoot-ghoti.png', desc: 'نوشابه قوطی شاتوت؛ میوه‌ای و خوش‌رنگ با طعمی متفاوت.' },
+    { id: 248, name: 'نوشابه خانواده شاتوت', price: '۵۹,۳۰۰', category: 'noshidani', image: 'images/portion/noshabe-shatoot-family.png', desc: 'نوشابه خانواده شاتوت؛ انتخابی خاص برای سلیقه‌های متفاوت.' }
+  ]
 };
 
 // ==================== State ====================
 const state = {
-    type: 'portion', // or 'kilo'
-    category: 'all',
-    searchQuery: ''
+  type: 'portion', // or 'kilo'
+  category: 'all',
+  searchQuery: ''
 };
 
 // ==================== Initialize ====================
 document.addEventListener('DOMContentLoaded', () => {
-    initTheme();
-    initHeroSlider();
-    initTypeSelector();
-    initCategoryFilter();
-    initSearch();
-    renderMenu();
+  initTheme();
+  initHeroSlider();
+  initTypeSelector();
+  initCategoryFilter();
+  initSearch();
+  renderMenu();
 });
 
 // ==================== Hero Slider ====================
 let currentSlide = 0;
 function initHeroSlider() {
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
 
-    function showSlide(n) {
-        slides.forEach(s => s.classList.remove('active'));
-        currentSlide = (n + totalSlides) % totalSlides;
-        slides[currentSlide].classList.add('active');
-    }
+  function showSlide(n) {
+    slides.forEach(s => s.classList.remove('active'));
+    currentSlide = (n + totalSlides) % totalSlides;
+    slides[currentSlide].classList.add('active');
+  }
 
-    document.querySelector('.slider-btn.next').addEventListener('click', () => {
-        showSlide(currentSlide + 1);
-    });
+  document.querySelector('.slider-btn.next').addEventListener('click', () => {
+    showSlide(currentSlide + 1);
+  });
 
-    document.querySelector('.slider-btn.prev').addEventListener('click', () => {
-        showSlide(currentSlide - 1);
-    });
+  document.querySelector('.slider-btn.prev').addEventListener('click', () => {
+    showSlide(currentSlide - 1);
+  });
 
-    // Auto-slide every 5 seconds
-    setInterval(() => showSlide(currentSlide + 1), 5000);
+  // Auto-slide every 5 seconds
+  setInterval(() => showSlide(currentSlide + 1), 5000);
 }
 
 // ==================== Menu Rendering ====================
 function initTypeSelector() {
-    // Type Selector (Kilo / Portion)
-    document.querySelectorAll('.type-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            state.type = btn.dataset.type;
-            renderMenu();
-        });
+  // Type Selector (Kilo / Portion)
+  document.querySelectorAll('.type-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.type-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.type = btn.dataset.type;
+      renderMenu();
     });
+  });
 }
 
 function initCategoryFilter() {
-    // Category Selector
-    document.querySelectorAll('.category-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
-            state.category = btn.dataset.category;
-            renderMenu();
-        });
+  // Category Selector
+  document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      state.category = btn.dataset.category;
+      renderMenu();
     });
+  });
 }
 
 function initSearch() {
-    const searchInput = document.getElementById('searchInput');
-    searchInput.addEventListener('input', (e) => {
-        state.searchQuery = e.target.value.trim().toLowerCase();
-        renderMenu();
-    });
+  const searchInput = document.getElementById('searchInput');
+  searchInput.addEventListener('input', (e) => {
+    state.searchQuery = e.target.value.trim().toLowerCase();
+    renderMenu();
+  });
 }
 
 function renderMenu() {
-    const grid = document.getElementById('menuGrid');
-    let items = menuData[state.type];
+  const grid = document.getElementById('menuGrid');
+  let items = menuData[state.type];
 
-    // Filter by Category
-    if (state.category !== 'all') {
-        items = items.filter(item => item.category === state.category);
-    }
+  // Filter by Category
+  if (state.category !== 'all') {
+    items = items.filter(item => item.category === state.category);
+  }
 
-    // Filter by Search
-    if (state.searchQuery) {
-        items = items.filter(item => item.name.includes(state.searchQuery));
-    }
+  // Filter by Search
+  if (state.searchQuery) {
+    items = items.filter(item => item.name.toLowerCase().includes(state.searchQuery));
+  }
 
-    if (items.length === 0) {
-        grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:50px">موردی یافت نشد</div>';
-        return;
-    }
+  if (items.length === 0) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:50px">موردی یافت نشد</div>';
+    return;
+  }
 
-    grid.innerHTML = items.map(item => `
-        <div class="menu-card glass" onclick="openProductModal(${item.id}, '${state.type}')">
-            <div class="card-img-container">
-                <img src="${item.image}" alt="${item.name}" onerror="this.src='images/placeholder.jpg'">
-            </div>
-            <div class="card-content">
-                <div class="card-header">
-                    <span class="card-title">${item.name}</span>
-                </div>
-                <div class="card-price">${item.price} تومان</div>
-                <div class="call-action">
-                    <i class="fas fa-eye"></i> مشاهده جزئیات
-                </div>
-            </div>
+  grid.innerHTML = items.map(item => `
+    <div class="menu-card glass" onclick="openProductModal(${item.id}, '${state.type}')">
+      <div class="card-img-container">
+        <img src="${item.image}" alt="${item.name}" onerror="this.src='images/placeholder.jpg'">
+      </div>
+      <div class="card-content">
+        <div class="card-header">
+          <span class="card-title">${item.name}</span>
         </div>
-    `).join('');
+        <div class="card-price">${item.price} تومان</div>
+        <div class="call-action">
+          <i class="fas fa-eye"></i> مشاهده جزئیات
+        </div>
+      </div>
+    </div>
+  `).join('');
 }
 
-// ==================== Modal & Gallery Logic ====================
+// ==================== Modal Logic (Single Image, Dynamic Description) ====================
 const modal = document.getElementById('productModal');
-let modalSlideIdx = 0;
 
 window.openProductModal = function(id, type) {
-    const item = menuData[type].find(i => i.id === id);
-    if (!item) return;
+  const item = menuData[type].find(i => i.id === id);
+  if (!item) return;
 
-    // Populate Modal Info
-    document.getElementById('modalTitle').textContent = item.name;
-    document.getElementById('modalPrice').textContent = item.price + ' تومان';
-    document.getElementById('modalCategory').textContent = getCategoryName(item.category);
+  // Populate Modal Info
+  document.getElementById('modalTitle').textContent = item.name;
+  document.getElementById('modalPrice').textContent = item.price + ' تومان';
+  document.getElementById('modalCategory').textContent = getCategoryName(item.category);
 
-    // Simulate 3 images (Using same image for demo, normally would come from DB)
-    const img1 = document.getElementById('modalImg1');
-    const img2 = document.getElementById('modalImg2');
-    const img3 = document.getElementById('modalImg3');
+  // Dynamic description (unique per product if available; otherwise generated)
+  const descEl = document.getElementById('modalDesc');
+  descEl.textContent = item.desc || generateDescription(item);
 
-    // Using placeholder logic just to show different images for demo if possible, or same
-    img1.src = item.image;
-    img2.src = item.image; // In real app: item.images[1]
-    img3.src = item.image; // In real app: item.images[2]
+  // Single image
+  const img = document.getElementById('modalImg');
+  img.src = item.image;
 
-    // Reset Slider
-    document.querySelectorAll('.product-slide').forEach(s => s.classList.remove('active'));
-    document.querySelector('.product-slide').classList.add('active');
-    modalSlideIdx = 0;
 
-    modal.style.display = 'flex';
-}
+  modal.style.display = 'flex';
+};
 
-// Modal Controls
+// Close Modal
 document.querySelector('.close-modal').addEventListener('click', () => {
-    modal.style.display = 'none';
+  modal.style.display = 'none';
 });
 
 window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-// Modal Internal Slider
-document.querySelector('.p-slider-btn.next').addEventListener('click', () => {
-    changeModalSlide(1);
-});
-document.querySelector('.p-slider-btn.prev').addEventListener('click', () => {
-    changeModalSlide(-1);
-});
-
-function changeModalSlide(n) {
-    const slides = document.querySelectorAll('.product-slide');
-    slides[modalSlideIdx].classList.remove('active');
-    modalSlideIdx = (modalSlideIdx + n + slides.length) % slides.length;
-    slides[modalSlideIdx].classList.add('active');
-}
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
 
 function getCategoryName(cat) {
-    const names = {
-        cheloi: 'چلویی', 
-        poloi: 'پلویی', 
-        kababi: 'کبابی',
-        daryaei: 'دریایی', 
-        khorak: 'خوراک', 
-        khoresht: 'خورشتی',
-        melal: 'ملل',
-        fingerfood: 'فینگرفود',
-        salad: 'سالادها', 
-        pishghaza: 'پیش غذا'
-    };
-    return names[cat] || cat;
+  const names = {
+    cheloi: 'چلویی',
+    poloi: 'پلویی',
+    kababi: 'کبابی',
+    daryaei: 'دریایی',
+    khorak: 'خوراک',
+    khoresht: 'خورشتی',
+    melal: 'ملل',
+    fingerfood: 'فینگرفود',
+    salad: 'سالادها',
+    pishghaza: 'پیش غذا',
+    noshidani: 'نوشیدنی'
+  };
+  return names[cat] || cat;
+}
+
+// Generate description for items without explicit desc
+function generateDescription(item) {
+  const catName = getCategoryName(item.category);
+  return `«${item.name}» از دسته ${catName} با مواد اولیه تازه و کیفیت تضمین‌شده آماده شده است. مناسب همراهی با سایر غذاهای منوی لذیذ.`;
 }
 
 // ==================== Theme Logic ====================
 function initTheme() {
-    const toggle = document.getElementById('themeToggle');
-    const saved = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', saved);
-    document.body.setAttribute('data-theme', saved);
+  const toggle = document.getElementById('themeToggle');
+  const saved = localStorage.getItem('theme') || 'light';
+  document.documentElement.setAttribute('data-theme', saved);
+  document.body.setAttribute('data-theme', saved);
 
-    toggle.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme');
-        const next = current === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        document.body.setAttribute('data-theme', next);
-        localStorage.setItem('theme', next);
-    });
+  toggle.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    document.body.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
 }
